@@ -1,9 +1,5 @@
 #pragma once
-#ifdef FIGURE_DYNAMIC_LIB_EXPORT
-#define FIGURE_DYNAMIC_LIB_API __declspec(dllexport)
-#else
-#define FIGURE_DYNAMIC_LIB_API __declspec(dllimport)
-#endif
+
 #include "Figure.h"
 class Quadrangle :public Figure {
 protected:
